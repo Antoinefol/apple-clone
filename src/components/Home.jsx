@@ -4,26 +4,17 @@ import {
 } from "react-router-dom";
 import { HomeButton } from "./HomeButton"
 
+
 export function Home() {
     return (
-      <div className="App">
-     
-    <div>
-      <h1>Home Page</h1>
-      <nav>
-        
-            <Link to="/Store">Page 1</Link>
-          
-        
-            <Link to="/Blog">Page 2</Link>
-          
-            <Link to="/Assistance">Page 3</Link>
-          
-            <Link to="/Profile">Page 4</Link>
-         
-      </nav>
-    </div>
-    <HomeButton/>
+      <div className="page-wrap">
+        <div className="portals-wrap">
+        <Link className="portals" to="Store">Store</Link>
+        <Link className="portals" to="Blog">Blog</Link>
+        <Link className="portals" to="Assistance">Assistance</Link>
+        <Link className="portals" to="Profile">Profile</Link> 
+        </div>
+      <HomeButton/>
       </div>
     );
   }
