@@ -1,12 +1,19 @@
 import React from "react";
 import { HomeButton } from "./HomeButton"
+import { BigImage } from "./BigImage"
+import { LittleImages } from "./LittleImages"
+
 export function Blog() {
     return (
-      <div>
-      <h1>Page 2</h1>
-      <p>This is page 2.</p>
-      <HomeButton/>
-    </div>
+      <div className="blog-wrap">
+        <BigImage imageSrc="iphone14-pro.jpg"/>
+        <BigImage imageSrc="iphone14-tall.jpg"/>
+        <BigImage imageSrc="apple-tall.jpg"/>
+        <LittleImages imageSrc="promo.jpg"/>
+        <LittleImages imageSrc="ipad-cover.jpg"/>
+        
+        <HomeButton/>
+      </div>
     );
   }
   

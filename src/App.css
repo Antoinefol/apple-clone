@@ -1,3 +1,8 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
 .HomeButton {
   height: 50px;
   width: 100%;
@@ -36,6 +41,10 @@
   border-radius: 4px;
 }
 
+.HomeButton > .link:active > .square {
+  transform: scale(0.9);
+}
+
 .page-wrap {
   height: 100vh;
   display: flex;
@@ -58,10 +67,95 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 30px;
+  background-color: white;
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  border: 1px solid white;
+  overflow: hidden;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.cart {
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(-100px);
+  transition: transform 0.5s ease-out;
+}
+
+.portals:hover .cart {
+  position: relative;
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.paper {
+  position: absolute;
+  visibility: hidden;
+  transform: translateY(-100px);
+  transition: transform 0.5s ease-out;
+}
+
+.portals:hover .paper {
+  position: relative;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.info {
+  position: absolute;
+  visibility: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.portals:hover .info {
+  position: relative;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.user {
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(100px);
+  transition: transform 0.5s ease-out;
+}
+
+.portals:hover .user {
+  position: relative;
+  visibility: visible;
+  transform: translateX(0px);
+}
+
+.blog-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+.big {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.Little {
+  object-fit: cover;
+  width: 50vw;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
