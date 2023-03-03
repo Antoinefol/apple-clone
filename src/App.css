@@ -137,6 +137,7 @@
 }
 
 .blog-wrap {
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
@@ -144,18 +145,104 @@
 }
 
 .big {
-  object-fit: cover;
+  display: block;
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 700px;
 }
 
 .Little {
-  object-fit: cover;
-  width: 50vw;
+  display: block;
+  position: relative;
+  width: 50%;
   height: auto;
 }
 
-img {
+.big > img {
+  object-fit: cover;
+  display: block;
   width: 100%;
-  height: auto;
+  height: 700px;
+}
+
+.big > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big > .text > .productName {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.big > .text > .catchphrase {
+  font-size: 30px;
+}
+
+.big > .text > .links {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.big > .text > .links > a {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #2894fa;
+  text-decoration: none;
+}
+
+.big > .text > .links > a:hover {
+  text-decoration: underline;
+}
+
+.Little > img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.Little > .text {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Little > .text > .productName {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.Little > .text > .catchphrase {
+  font-size: 20px;
+}
+
+.Little > .text > .links {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Little > .text > .links > a {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #2894fa;
+  text-decoration: none;
+}
+
+.Little > .text > .links > a:hover {
+  text-decoration: underline;
 }
