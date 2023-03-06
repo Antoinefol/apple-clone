@@ -137,6 +137,7 @@
 }
 
 .blog-wrap {
+  background-color: #ffffff;
   overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -145,6 +146,7 @@
 }
 
 .big {
+  margin: 5px 0;
   display: block;
   position: relative;
   width: 100%;
@@ -152,6 +154,7 @@
 }
 
 .Little {
+  margin: 5px 0;
   display: block;
   position: relative;
   width: 50%;
@@ -252,16 +255,73 @@
 }
 
 .carousel {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   width: 100vw;
-  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
-.carousel-image > img {
-  width: 500px;
-  height: auto;
+.slides-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+  width: 100vw;
+  height: 550px;
+}
+
+.slide {
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.image {
+  width: 900px;
+  height: 500px;
   object-fit: cover;
+}
+
+.previous {
+  opacity: 0.9;
+  transform: translateX(-800px) scale(0.9);
+}
+
+.next {
+  opacity: 0.9;
+  transform: translateX(800px) scale(0.9);
+}
+
+.inactive {
+  opacity: 0;
+  transform: translateX(900px) scale(0.9);
+}
+
+.active {
+  z-index: 10;
+}
+
+.carousel-indicators {
+  width: 200px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 10px, 0, 0, 0;
+}
+
+.carousel-indicators > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+}
+
+.carousel-indicators > li.active {
+  background-color: #707070;
 }

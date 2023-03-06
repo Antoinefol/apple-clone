@@ -3,6 +3,7 @@ import { HomeButton } from "./HomeButton"
 import { BigImage } from "./BigImage"
 import { LittleImages } from "./LittleImages"
 import { Carousel } from "./Carousel"
+import {CarouselData} from "./CarouselData.js";
 
 export function Blog() {
     return (
@@ -16,7 +17,7 @@ export function Blog() {
         <LittleImages logo="" textColor="white" title="AirPods Pro" catchphrase="Le son.Nouvelle définition" BuyLink="" MoreLink="" imageSrc="airpods.jpg"/>
         <LittleImages logo="logo-fitness.png" textColor="" title="" catchphrase="Cette année c'est votre année. Il vous suffit d'un iPhone" BuyLink="" MoreLink="" imageSrc="apple-fitness.jpg"/>
         <LittleImages logo="" textColor="white" title="Créativité et communauté. Profondément liées" catchphrase="Découvre le nouveau bracelet Black Unity et son cadran assorti." BuyLink="" MoreLink="" imageSrc="bhm-watch.jpg"/>
-        <Carousel images={["./apple-images/ipad-cover.jpg","./apple-images/iphone14-pro.jpg"]}/>
+        <Carousel slides={CarouselData}/>
         <HomeButton   />
       </div>
     );
