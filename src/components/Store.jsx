@@ -4,8 +4,12 @@ import { HomeButton } from "./HomeButton"
 
 export function Store() {
     return (
+       <div>
       <div className="storeWrap">
+       
       <StoreComponent/>
+      
+      </div>
       <HomeButton/>
       </div>
     );
