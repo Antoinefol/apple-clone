@@ -4,13 +4,25 @@ export const storeData = [
     product: [
       {
         name: "MacBook Air avec puce M1",
-        prix: "A partir de 1 199 €",
+        prix: 1199,
         screen: " 13.3 pouces",
         puce: "Puce Apple M1",
         RAM: "8 Go ou 16 Go de mémoire unifiée",
         stockage: "256 Go à 2 To de stockage",
         autonomie: "jusqu'à 18 heures d'autonomie",
-        gadgets: "Touch ID",
+        gadgets: "Touch ID, Touch bar",
+        options: {
+          stockage: {
+            taille1: { taille: "256 Go", prix: 0 },
+            taille2: { taille: "512 Go", prix: 230 },
+            taille3: { taille: "1 To", prix: 460 },
+            taille4: { taille: "2 To", prix: 920 },
+          },
+          RAM: {
+            taille1: { taille: "8 Go", prix: 0 },
+            taille2: { taille: "16 Go", prix: 230 },
+          },
+        },
         dimensions: {
           Hauteur: "0.41 à 1.61 cm",
           Largeur: "30.41cm",
@@ -22,13 +34,25 @@ export const storeData = [
       },
       {
         name: 'MacBook Pro 13"',
-        prix: "A partir de 1 599 €",
+        prix: 1599,
         screen: " 13.3 pouces",
         puce: "Puce Apple M2",
         RAM: "8 Go à 24 Go de mémoire unifiée",
         stockage: "256 Go à 2 To de stockage",
         autonomie: "jusqu'à 20 heures d'autonomie",
         gadgets: "Touch ID , Touch Bar",
+        options: {
+          stockage: {
+            taille1: { taille: "256 Go", prix: 0 },
+            taille2: { taille: "512 Go", prix: 230 },
+            taille3: { taille: "1 To", prix: 460 },
+            taille4: { taille: "2 To", prix: 920 },
+          },
+          RAM: {
+            taille1: { taille: "8 Go", prix: 0 },
+            taille2: { taille: "16 Go", prix: 230 },
+          },
+        },
         dimensions: {
           Hauteur: "1.56cm",
           Largeur: "30.41cm",
@@ -48,8 +72,8 @@ export const storeData = [
     product: [
       {
         name: 'Iphone 13"',
-        prix: "A partir de 809 €",
-        screen: " 6.1 ou 5.4 pouces",
+        prix: 809,
+        screen: " 6.1  pouces",
         puce: "Puce A15 Bionic avec GPU 4 coeurs",
         RAM: "8 Go à 24 Go de mémoire unifiée",
         stockage: "128 Go à 512 Go de stockage",
@@ -68,8 +92,8 @@ export const storeData = [
       {
         type: "IPhone",
         name: 'Iphone 14"',
-        prix: "A partir de 1019 €",
-        screen: " 6.7 ou 6.1 pouces",
+        prix: 1019,
+        screen: " 6.7 pouces",
         puce: "Puce A16 Bionic",
         RAM: "8 Go à 24 Go de mémoire unifiée",
         stockage: "128 Go à 512 Go de stockage",
@@ -94,7 +118,7 @@ export const storeData = [
     product: [
       {
         name: "Ipad Air",
-        prix: "A partir de 789 €",
+        prix: 789,
         screen: "10.9 pouces",
         puce: "Puce Apple M1",
         RAM: "8 Go ",
@@ -113,7 +137,7 @@ export const storeData = [
       {
         type: "IPad",
         name: "Ipad 10e génération",
-        prix: "A partir de 589 €",
+        prix: 589,
         screen: "10.9 pouces",
         puce: "Puce A14 Bionic",
         RAM: "8 Go ",
@@ -137,7 +161,7 @@ export const storeData = [
     product: [
       {
         name: "Apple Watch Ultra",
-        prix: "A partir de 999 €",
+        prix: 999,
         screen: "410 x 502 pixels",
         puce: "SiP S8 avec processeur bicœur 64 bits",
         RAM: "",
@@ -155,7 +179,7 @@ export const storeData = [
       {
         type: "Watch",
         name: "Apple Watch Serie 8",
-        prix: "A partir de 499 €",
+        prix: 499,
         screen: "396 x 484 pixels",
         puce: "SiP S8 avec processeur bicœur 64 bits",
         RAM: "",
@@ -179,7 +203,7 @@ export const storeData = [
     product: [
       {
         name: "Airpods 3e génération",
-        prix: "159 €",
+        prix: 159,
         puce: "Puce H1",
         autonomie: "jusqu'à 5 heures d'autonomie",
         dimensions: {
@@ -193,7 +217,7 @@ export const storeData = [
       {
         type: "airpods",
         name: "Airpods Max",
-        prix: "629 €",
+        prix: 629,
         puce: "Puce H1",
         autonomie: "jusqu'à 20 heures d'autonomie",
         dimensions: {
@@ -213,7 +237,7 @@ export const storeData = [
     product: [
       {
         name: "Apple TV 4K",
-        prix: "169 €",
+        prix: 169,
         résolution: "4K",
         puce: "Puce A15 Bionic",
         stockage: "64 Go",
@@ -228,7 +252,7 @@ export const storeData = [
       {
         type: "home",
         name: "HomePod",
-        prix: "349 €",
+        prix: 349,
         dimensions: {
           Hauteur: "168 mm",
           Largeur: "148 mm",
@@ -246,7 +270,7 @@ export const storeData = [
     product: [
       {
         name: "AirTag",
-        prix: "19 €",
+        prix: 19,
         dimensions: {
           Hauteur: "8 mm",
           Largeur: "31.9 mm",
@@ -258,7 +282,7 @@ export const storeData = [
       {
         type: "accessories",
         name: "coque",
-        prix: "a partir de 59 €",
+        prix: 59,
         productImage: "./apple-images/shop-items/case.png",
       },
     ],
@@ -270,7 +294,7 @@ export const storeData = [
     product: [
       {
         name: "giftcard",
-        prix: "a partir de 25 €",
+        prix: 25,
         productImage: "./apple-images/shop-items/gift.png",
       },
     ],

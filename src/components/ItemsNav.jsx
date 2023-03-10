@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { storeData } from "./StoreData.js";
-import BuyModal from './BuyModal.jsx';
+import BuyModal from "./BuyModal.jsx";
 
 export function StoreComponent({ Data }) {
   let prevType = null;
@@ -9,17 +9,17 @@ export function StoreComponent({ Data }) {
   const [selectedItem, setSelectedItem] = useState([]);
   const [ShowModal, setShowModal] = useState(false);
   const [showBlurBackground, setShowBlurBackground] = useState(false);
-  
+
   const handleClick = (name) => {
-  setShowModal(true);
-  setShowBlurBackground(true);
-  const product = storeData
-    .filter((item) => item.product.find(p => p.name === name))
-    .flatMap((item) => item.product)
-    .find(p => p.name === name);
+    setShowModal(true);
+    setShowBlurBackground(true);
+    const product = storeData
+      .filter((item) => item.product.find((p) => p.name === name))
+      .flatMap((item) => item.product)
+      .find((p) => p.name === name);
     const serializedObject = JSON.stringify(product);
-  setSelectedItem(serializedObject);
-};
+    setSelectedItem(serializedObject);
+  };
 
   const handleClose = () => {
     setShowModal(false);
@@ -44,14 +44,18 @@ export function StoreComponent({ Data }) {
 
   return (
     <div>
-      <div className={`StoreNav ${showBlurBackground ? "blurred-background" : ""}`}>
+      <div
+        className={`StoreNav ${showBlurBackground ? "blurred-background" : ""}`}
+      >
         {storeData &&
           storeData.map((item, index) => {
             if (item.type !== prevType) {
               prevType = item.type;
               return (
                 <div
-                className={`StoreSelector ${selectedType === item.type ? "active" : ""}`}
+                  className={`StoreSelector ${
+                    selectedType === item.type ? "active" : ""
+                  }`}
                   type={item.type}
                   key={index}
                   onClick={() => onStoreSelectorClick(item.type)}
@@ -65,30 +69,26 @@ export function StoreComponent({ Data }) {
       </div>
       <div className="ItemsWrap">
         {selectedProducts.map((product, index) => (
-          <div className={`item ${showBlurBackground ? "blurred-background" : ""}`} key={index} >
+          <div
+            className={`item ${showBlurBackground ? "blurred-background" : ""}`}
+            key={index}
+          >
             <h1>{product.name}</h1>
             <div className="images">
               <img className="itemImg" src={product.productImage} alt="" />
             </div>
             <div className="text">
-              <p>{product.prix}</p>
-              <button className="Buy" onClick={() => handleClick(product.name)}>Acheter</button>
-              
+              <p>A partir de {product.prix}€</p>
+              <button className="Buy" onClick={() => handleClick(product.name)}>
+                Acheter
+              </button>
             </div>
           </div>
-        ))}{ShowModal && <BuyModal products={selectedItem} onClose={handleClose}/>}
+        ))}
+        {ShowModal && (
+          <BuyModal products={selectedItem} onClose={handleClose} />
+        )}
       </div>
-      
     </div>
   );
-};
-
-  
-
-  
-  
-  
-  
-  
-  
-  
+}
