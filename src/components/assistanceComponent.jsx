@@ -1,8 +1,6 @@
 import React from "react";
 
 export function AssistanceComponent(props) {
-  console.log("Image source:", imageSrc);
-  console.log("Count:", count);
   return (
     <div className="card-item">
       <div className="cardText">
