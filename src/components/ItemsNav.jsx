@@ -101,7 +101,7 @@ export function StoreComponent({ Data }) {
               <h1>{product.name}</h1>
               <div
                 className="images"
-                style={{ backgroundImage: url(product.productImage) }}
+                style={{ backgroundImage: `url(${product.productImage})` }}
               ></div>
               <div className="text">
                 <p>A partir de {product.prix}€</p>
