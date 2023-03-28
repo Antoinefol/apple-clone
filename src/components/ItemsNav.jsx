@@ -99,13 +99,10 @@ export function StoreComponent({ Data }) {
               key={index}
             >
               <h1>{product.name}</h1>
-              <div className="images">
-                <img
-                  className="itemImg"
-                  src={require(product.productImage).default}
-                  alt=""
-                />
-              </div>
+              <div
+                className="images"
+                style={{ backgroundImage: product.productImage }}
+              ></div>
               <div className="text">
                 <p>A partir de {product.prix}€</p>
                 <button
