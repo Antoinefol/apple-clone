@@ -54,6 +54,7 @@ export function StoreComponent({ Data }) {
       .filter((item) => item.type === type)
       .flatMap((item) => item.product);
     setSelectedProducts(products);
+    console.log(product.productImage);
   };
 
   useEffect(() => {
@@ -61,7 +62,6 @@ export function StoreComponent({ Data }) {
     onStoreSelectorClick("Mac");
   }, []); // [] en tant que 2ème argument pour que la fonction ne soit appelée qu'une seule fois au chargement initial de la page
 
-  console.log(product.productImage);
   return (
     <StoreContext.Provider value={{ newConfig, setNewConfig }}>
       <div>
