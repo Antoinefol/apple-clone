@@ -54,7 +54,7 @@ export function StoreComponent({ Data }) {
       .filter((item) => item.type === type)
       .flatMap((item) => item.product);
     setSelectedProducts(products);
-    console.log(product.productImage);
+    console.log(products.productImage);
   };
 
   useEffect(() => {
