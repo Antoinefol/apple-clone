@@ -1,3 +1,26 @@
+import { default as macBookAir } from "../apple-images/shop-items/macBookAir.jpg";
+import { default as macbookPro } from "../apple-images/shop-items/macbookPro.png";
+import { default as Mac } from "../apple-images/store-image/mac.png";
+import { default as iphone13 } from "../apple-images/shop-items/iphone13.png";
+import { default as iphone14 } from "../apple-images/shop-items/iphone14.png";
+import { default as iphone } from "../apple-images/store-image/iphone.png";
+import { default as ipadAir } from "../apple-images/shop-items/ipadAir.png";
+import { default as ipad10 } from "../apple-images/shop-items/ipad10.png";
+import { default as ipad } from "../apple-images/store-image/ipad.png";
+import { default as watchUltra } from "../apple-images/shop-items/watchUltra.png";
+import { default as Watch8 } from "../apple-images/shop-items/watch8.png";
+import { default as watch } from "../apple-images/store-image/watch.png";
+import { default as airpods2 } from "../apple-images/shop-items/airpods2.png";
+import { default as airpodmax } from "../apple-images/shop-items/airpod_max.png";
+import { default as airpods } from "../apple-images/store-image/airpods.png";
+import { default as appletv } from "../apple-images/shop-items/apple-tv.png";
+import { default as homePod } from "../apple-images/shop-items/homePod.png";
+import { default as home } from "../apple-images/store-image/home.png";
+import { default as airtag } from "../apple-images/shop-items/airtag.png";
+import { default as Case } from "../apple-images/shop-items/case.png";
+import { default as accessoires } from "../apple-images/store-image/accessoires.png";
+import { default as gift } from "../apple-images/shop-items/gift.png";
+
 export const storeData = [
   {
     type: "Mac",
@@ -30,7 +53,7 @@ export const storeData = [
           Poids: "1.29 kg",
         },
         exploitation: "macOS",
-        productImage: "/apple-images/shop-items/mac-book-air.jpg",
+        productImage: macBookAir,
       },
       {
         name: 'MacBook Pro 13"',
@@ -61,10 +84,10 @@ export const storeData = [
         },
         exploitation: "macOS",
 
-        productImage: "/apple-images/shop-items/macbookPro.png",
+        productImage: macbookPro,
       },
     ],
-    frontImage: "/apple-images/store-image/mac.png",
+    frontImage: Mac,
   },
 
   {
@@ -87,7 +110,7 @@ export const storeData = [
         },
         exploitation: "IOS",
 
-        productImage: "./apple-images/shop-items/iphone13.png",
+        productImage: iphone13,
       },
       {
         type: "IPhone",
@@ -107,10 +130,10 @@ export const storeData = [
         },
         exploitation: "IOS",
 
-        productImage: "./apple-images/shop-items/iphone14.png",
+        productImage: iphone14,
       },
     ],
-    frontImage: "./apple-images/store-image/iphone.png",
+    frontImage: iphone,
   },
 
   {
@@ -132,7 +155,7 @@ export const storeData = [
         },
         exploitation: "IPadOS 16",
 
-        productImage: "./apple-images/shop-items/ipadAir.png",
+        productImage: ipadAir,
       },
       {
         type: "IPad",
@@ -150,10 +173,10 @@ export const storeData = [
           Poids: "481 g",
         },
         exploitation: "IPadOS 16",
-        productImage: "./apple-images/shop-items/ipad10.png",
+        productImage: ipad10,
       },
     ],
-    frontImage: "./apple-images/store-image/ipad.png",
+    frontImage: ipad,
   },
 
   {
@@ -174,7 +197,7 @@ export const storeData = [
           Poids: "61.3 g",
         },
         exploitation: "WatchOS",
-        productImage: "./apple-images/shop-items/watchUltra.png",
+        productImage: watchUltra,
       },
       {
         type: "Watch",
@@ -192,10 +215,10 @@ export const storeData = [
           Poids: "de 38.8 g a 51.5 g",
         },
         exploitation: "WatchOS",
-        productImage: "./apple-images/shop-items/Watch8.png",
+        productImage: Watch8,
       },
     ],
-    frontImage: "./apple-images/store-image/watch.png",
+    frontImage: watch,
   },
 
   {
@@ -212,7 +235,7 @@ export const storeData = [
           Profondeur: "18 mm",
           Poids: "28.2 g",
         },
-        productImage: "./apple-images/shop-items/airpods2.png",
+        productImage: airpods2,
       },
       {
         type: "airpods",
@@ -226,10 +249,10 @@ export const storeData = [
           Profondeur: "83.4 mm",
           Poids: "384.8 g",
         },
-        productImage: "./apple-images/shop-items/airpod_max.png",
+        productImage: airpodmax,
       },
     ],
-    frontImage: "./apple-images/store-image/airpods.png",
+    frontImage: airpods,
   },
 
   {
@@ -247,7 +270,7 @@ export const storeData = [
           Profondeur: "93 mm",
           Poids: "208 g",
         },
-        productImage: "./apple-images/shop-items/apple-tv.png",
+        productImage: appletv,
       },
       {
         type: "home",
@@ -259,10 +282,10 @@ export const storeData = [
           Profondeur: "148 mm",
           Poids: "2.3 kg",
         },
-        productImage: "./apple-images/shop-items/homePod.png",
+        productImage: homePod,
       },
     ],
-    frontImage: "./apple-images/store-image/home.png",
+    frontImage: home,
   },
 
   {
@@ -277,16 +300,16 @@ export const storeData = [
           Profondeur: "31.9 mm",
           Poids: "11 g",
         },
-        productImage: "./apple-images/shop-items/airtag.png",
+        productImage: airtag,
       },
       {
         type: "accessories",
         name: "coque",
         prix: 59,
-        productImage: "./apple-images/shop-items/case.png",
+        productImage: Case,
       },
     ],
-    frontImage: "./apple-images/store-image/accessoires.png",
+    frontImage: accessoires,
   },
 
   {
@@ -295,9 +318,9 @@ export const storeData = [
       {
         name: "giftcard",
         prix: 25,
-        productImage: "./apple-images/shop-items/gift.png",
+        productImage: gift,
       },
     ],
-    frontImage: "./apple-images/store-image/gift.png",
+    frontImage: gift,
   },
 ];
