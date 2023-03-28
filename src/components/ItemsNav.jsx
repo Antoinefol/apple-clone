@@ -100,11 +100,7 @@ export function StoreComponent({ Data }) {
             >
               <h1>{product.name}</h1>
               <div className="images">
-                <img
-                  className="itemImg"
-                  src="./apple-images/shop-items/mac-book-air.jpg"
-                  alt=""
-                />
+                <img className="itemImg" src={product.productImage} alt="" />
               </div>
               <div className="text">
                 <p>A partir de {product.prix}€</p>
