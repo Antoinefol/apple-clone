@@ -639,7 +639,7 @@
 }
 
 .banner {
-  background-image: url("../public/apple-images/Assistance/banner.jpg");
+  background-image: url("./apple-images/Assistance/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 30%;
