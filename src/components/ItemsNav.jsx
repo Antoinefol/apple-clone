@@ -102,7 +102,7 @@ export function StoreComponent({ Data }) {
               <div className="images">
                 <img
                   className="itemImg"
-                  src={require("build/" + product.productImage).default}
+                  src={require(product.productImage).default}
                   alt=""
                 />
               </div>
