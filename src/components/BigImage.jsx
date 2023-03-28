@@ -5,7 +5,11 @@ export function BigImage(props) {
     <div className="big">
       <div className="text" style={{ color: props.textColor }}>
         {props.logo !== "" && props.logo && (
-          <img className="logo" src={`./apple-images/${props.logo}`} alt="" />
+          <img
+            className="logo"
+            src={`../../public/apple-images/${props.logo}`}
+            alt=""
+          />
         )}
         {props.title !== "" && props.title && (
           <div className="productName">{props.title}</div>
@@ -23,7 +27,7 @@ export function BigImage(props) {
         </div>
       </div>
       {props.imageSrc && (
-        <img src={`./apple-images/${props.imageSrc}`} alt="" />
+        <img src={`../../public/apple-images/${props.imageSrc}`} alt="" />
       )}
     </div>
   );
