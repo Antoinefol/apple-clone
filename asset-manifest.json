@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/apple-clone/static/css/main.d704c997.css",
-    "main.js": "/apple-clone/static/js/main.4afe2e0b.js",
+    "main.js": "/apple-clone/static/js/main.1e85eb56.js",
     "static/media/banner.jpg": "/apple-clone/static/media/banner.adb168b97913b7436c1e.jpg",
     "index.html": "/apple-clone/index.html",
     "main.d704c997.css.map": "/apple-clone/static/css/main.d704c997.css.map",
-    "main.4afe2e0b.js.map": "/apple-clone/static/js/main.4afe2e0b.js.map"
+    "main.1e85eb56.js.map": "/apple-clone/static/js/main.1e85eb56.js.map"
   },
   "entrypoints": [
     "static/css/main.d704c997.css",
-    "static/js/main.4afe2e0b.js"
+    "static/js/main.1e85eb56.js"
   ]
 }
