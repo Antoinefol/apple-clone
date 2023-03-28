@@ -1,6 +1,6 @@
 import React from "react";
 
-function AssistanceComponent(props) {
+export function AssistanceComponent(props) {
   let count = 0;
   const regex = /apple-images\/Assistance\/(\d+)\.jpg/;
   const imageSrc = props.imageSrc;
@@ -37,5 +37,3 @@ function AssistanceComponent(props) {
     </div>
   );
 }
-
-export default AssistanceComponent;
