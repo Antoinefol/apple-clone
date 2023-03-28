@@ -100,7 +100,11 @@ export function StoreComponent({ Data }) {
             >
               <h1>{product.name}</h1>
               <div className="images">
-                <img className="itemImg" src={product.productImage} alt="" />
+                <img
+                  className="itemImg"
+                  src={require(product.productImage).default}
+                  alt=""
+                />
               </div>
               <div className="text">
                 <p>A partir de {product.prix}€</p>
