@@ -1,8 +1,6 @@
 import React from "react";
 
 export function AssistanceComponent(props) {
-  console.log("Image source:", props.imageSrc);
-
   return (
     <div className="card-item">
       <div className="cardText">
