@@ -23,7 +23,7 @@ export function StoreComponent({ Data }) {
     setCartItems([...cartItems, { ...newConfig, id: newId }]);
     console.log(cartItems);
   };
-
+  console.log(storeData);
   const handleClick = (name) => {
     setShowModal(true);
     setShowBlurBackground(true);
@@ -54,7 +54,6 @@ export function StoreComponent({ Data }) {
       .filter((item) => item.type === type)
       .flatMap((item) => item.product);
     setSelectedProducts(products);
-    console.log(storeData);
   };
 
   useEffect(() => {
