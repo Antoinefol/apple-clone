@@ -1,14 +1,6 @@
 import React from "react";
 
 export function AssistanceComponent(props) {
-  let count = 0;
-  const regex = /apple-images\/Assistance\/(\d+)\.jpg/;
-  const imageSrc = props.imageSrc;
-
-  if (imageSrc.match(regex)) {
-    count = parseInt(imageSrc.match(regex)[1], 10);
-  }
-
   console.log("Image source:", imageSrc);
   console.log("Count:", count);
   return (
