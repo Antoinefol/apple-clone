@@ -29,10 +29,7 @@ export function AssistanceComponent(props) {
         </div>
       </div>
       {props.imageSrc && (
-        <img
-          src={`../../public/apple-images/Assistance/${props.imageSrc}`}
-          alt=""
-        />
+        <img src={`./apple-images/Assistance/${props.imageSrc}`} alt="" />
       )}
     </div>
   );

@@ -1,23 +1,23 @@
 export const CarouselData = [
   {
-    image: "../../public/apple-images/apple-tv/see.jpg",
+    image: "./apple-images/apple-tv/see.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/liaison.jpg",
+    image: "./apple-images/apple-tv/liaison.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/shantaram.jpg",
+    image: "./apple-images/apple-tv/shantaram.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/emancipation.jpg",
+    image: "./apple-images/apple-tv/emancipation.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/sharper.jpg",
+    image: "./apple-images/apple-tv/sharper.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/shrinking.jpg",
+    image: "./apple-images/apple-tv/shrinking.jpg",
   },
   {
-    image: "../../public/apple-images/apple-tv/hello-tomorrow.jpg",
+    image: "./apple-images/apple-tv/hello-tomorrow.jpg",
   },
 ];

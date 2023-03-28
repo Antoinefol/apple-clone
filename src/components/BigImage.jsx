@@ -27,7 +27,7 @@ export function BigImage(props) {
         </div>
       </div>
       {props.imageSrc && (
-        <img src={`../../public/apple-images/${props.imageSrc}`} alt="" />
+        <img src={`./apple-images/${props.imageSrc}`} alt="" />
       )}
     </div>
   );
