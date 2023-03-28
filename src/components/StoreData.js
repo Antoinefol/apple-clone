@@ -30,7 +30,7 @@ export const storeData = [
           Poids: "1.29 kg",
         },
         exploitation: "macOS",
-        productImage: "./apple-images/shop-items/mac-book-air.jpg",
+        productImage: "/apple-images/shop-items/mac-book-air.jpg",
       },
       {
         name: 'MacBook Pro 13"',
@@ -61,10 +61,10 @@ export const storeData = [
         },
         exploitation: "macOS",
 
-        productImage: "./apple-images/shop-items/macbookPro.png",
+        productImage: "/apple-images/shop-items/macbookPro.png",
       },
     ],
-    frontImage: "./apple-images/store-image/mac.png",
+    frontImage: "/apple-images/store-image/mac.png",
   },
 
   {
