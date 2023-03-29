@@ -26,11 +26,7 @@ export function AssistanceComponentSided(props) {
         </div>
       </div>
       {props.imageSrc && (
-        <img
-          className="imgSide"
-          src={`./apple-images/Assistance/${props.imageSrc}`}
-          alt=""
-        />
+        <img className="imgSide" src={props.imageSrc} alt="" />
       )}
     </div>
   );

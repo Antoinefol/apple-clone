@@ -1,23 +1,31 @@
+import { default as see } from "../apple-images/apple-tv/see.jpg";
+import { default as liaison } from "../apple-images/apple-tv/liaison.jpg";
+import { default as shantaram } from "../apple-images/apple-tv/shantaram.jpg";
+import { default as emancipation } from "../apple-images/apple-tv/emancipation.jpg";
+import { default as sharper } from "../apple-images/apple-tv/sharper.jpg";
+import { default as shrinking } from "../apple-images/apple-tv/shrinking.jpg";
+import { default as hellotomorrow } from "../apple-images/apple-tv/hello-tomorrow.jpg";
+
 export const CarouselData = [
   {
-    image: "/apple-images/apple-tv/see.jpg",
+    image: see,
   },
   {
-    image: "/apple-images/apple-tv/liaison.jpg",
+    image: liaison,
   },
   {
-    image: "/apple-images/apple-tv/shantaram.jpg",
+    image: shantaram,
   },
   {
-    image: "/apple-images/apple-tv/emancipation.jpg",
+    image: emancipation,
   },
   {
-    image: "/apple-images/apple-tv/sharper.jpg",
+    image: sharper,
   },
   {
-    image: "/apple-images/apple-tv/shrinking.jpg",
+    image: shrinking,
   },
   {
-    image: "/apple-images/apple-tv/hello-tomorrow.jpg",
+    image: hellotomorrow,
   },
 ];

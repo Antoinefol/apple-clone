@@ -2,6 +2,11 @@ import React from "react";
 import { AssistanceComponent } from "./assistanceComponent";
 import { HomeButton } from "./HomeButton";
 import { AssistanceComponentSided } from "./assistanceComponentSideImg";
+import { default as lastmaj } from "../apple-images/Assistance/lastMAJ.png";
+import { default as appleStore } from "../apple-images/Assistance/appleStore.png";
+import { default as getSupport } from "../apple-images/Assistance/getSupport.png";
+import { default as AppleCare } from "../apple-images/Assistance/AppleCare.png";
+import { default as appleTrade } from "../apple-images/Assistance/appleTrade.png";
 
 export function Assistance() {
   return (
@@ -15,21 +20,21 @@ export function Assistance() {
           content="Passer à iOS 16 ou iPadOS 16."
           Link="a"
           LinkText="Découvrir la marche à suivre"
-          imageSrc="lastMAJ.png"
+          imageSrc={lastmaj}
         />
         <AssistanceComponent
           title="Gérer votre confidentialité"
           content="Rejoignez-nous à l’Apple Store pour une session de 30 minutes au cours de laquelle vous découvrirez comment protéger votre confidentialité sur l’iPhone."
           Link="a"
           LinkText="S’inscrire"
-          imageSrc="appleStore.png"
+          imageSrc={appleStore}
         />
         <AssistanceComponent
           title="Bénéficier d’une assistance"
           content="Décrivez-nous votre problème et nous vous proposerons la meilleure solution. Contactez-nous par téléphone, par chat, par e-mail ou par d’autres moyens."
           Link="a"
           LinkText="Commencer dès maintenant"
-          imageSrc="getSupport.png"
+          imageSrc={getSupport}
         />
         <AssistanceComponent
           title="Mon assistance"
@@ -44,7 +49,7 @@ export function Assistance() {
           Link="a"
           LinkText="Informations supplémentaires"
           LeftOrRight="Right"
-          imageSrc="AppleCare.png"
+          imageSrc={AppleCare}
         />
         <AssistanceComponentSided
           title="Apple Trade In"
@@ -52,7 +57,7 @@ export function Assistance() {
           Link="a"
           LinkText="En savoir plus"
           LeftOrRight="Left"
-          imageSrc="appleTrade.png"
+          imageSrc={appleTrade}
         />
         <AssistanceComponent
           title="Des réparations sûres et dignes de confiance"

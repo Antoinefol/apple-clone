@@ -18,9 +18,7 @@ export function AssistanceComponent(props) {
           )}
         </div>
       </div>
-      {props.imageSrc && (
-        <img src={`./apple-images/Assistance/${props.imageSrc}`} alt="" />
-      )}
+      {props.imageSrc && <img src={props.imageSrc} alt="" />}
     </div>
   );
 }

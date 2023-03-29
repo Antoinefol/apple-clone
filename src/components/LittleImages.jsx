@@ -5,11 +5,7 @@ export function LittleImages(props) {
     <div className="Little">
       <div className="text" style={{ color: props.textColor }}>
         {props.logo !== "" && props.logo && (
-          <img
-            className="logo"
-            src={`../../public/apple-images/${props.logo}`}
-            alt=""
-          />
+          <img className="logo" src={props.logo} alt="" />
         )}
         {props.title !== "" && props.title && (
           <div className="productName">{props.title}</div>
@@ -26,9 +22,7 @@ export function LittleImages(props) {
           )}
         </div>
       </div>
-      {props.imageSrc && (
-        <img src={`./apple-images/${props.imageSrc}`} alt="" />
-      )}
+      {props.imageSrc && <img src={props.imageSrc} alt="" />}
     </div>
   );
 }
