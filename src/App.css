@@ -599,6 +599,9 @@
 }
 
 .Total {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
   margin: 10px;
   position: fixed;
   bottom: 0;
@@ -607,6 +610,18 @@
   font-size: 30px;
   background-color: #fff;
   transition: all 0.5s;
+}
+
+.pay {
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  width: 100px;
+  border-radius: 980px;
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
 }
 
 .itemCount {

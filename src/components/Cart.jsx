@@ -55,7 +55,7 @@ function Cart(props) {
             {props.Items.reduce((acc, item) => {
               return acc + item.totalPrice;
             }, 0)}{" "}
-            €
+            €<button className="pay">Buy</button>
           </div>
         </div>
       ) : (
